@@ -42,11 +42,14 @@ public class Practice8Test {
 	
 	
 	public void topologicalSortTest() {
-		Graph g = getGraph(3);
-		
+		Graph g = getGraph(6);
+		//modified this to test out the "sort"
 		g.addEdge(0, 1);
 		g.addEdge(0, 2);
 		g.addEdge(2, 1);
+		g.addEdge(1, 3);
+		g.addEdge(4, 1);
+		g.addEdge(5, 2);
 		g.topologicalSort();
 	}
 	
